@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="fragment_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">150dp</item>
+        <item name="android:layout_marginTop">176dp</item>
+        <item name="android:textColor">#018E42</item>
+        <item name="android:textSize">200sp</item>
+    </style>
+
+    <style name="fragment_btn_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">160dp</item>
+        <item name="android:layout_marginBottom">50dp</item>
+        <item name="android:background">@drawable/next__prev_btn</item>
+        <item name="android:textSize">50sp</item>
+    </style>
+</resources>
