@@ -7,29 +7,30 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.Navigation
 import com.adv.kotlin_fragments.databinding.FragmentFirstBinding
+import com.adv.kotlin_fragments.databinding.FragmentThirdBinding
 
 
-class FirstFragment : Fragment() {
+class ThirdFragment : Fragment() {
 
-    lateinit var binding: FragmentFirstBinding
+    lateinit var binding: FragmentThirdBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentFirstBinding.inflate(inflater)
+        binding = FragmentThirdBinding.inflate(inflater)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.buttonTo2.setOnClickListener {
-            Navigation.findNavController(it).navigate(R.id.action_firstFragment_to_secondFragment)
-        }
-        binding.buttonTo3.setOnClickListener {
-            Navigation.findNavController(it).navigate(R.id.action_firstFragment_to_thirdFragment)
+        binding.buttonTo13.setOnClickListener {
+            Navigation.findNavController(it).navigate(R.id.action_thirdFragment_to_firstFragment)
         }
 
+        binding.buttonTo23.setOnClickListener {
+            Navigation.findNavController(it).navigate(R.id.action_thirdFragment_to_secondFragment)
+        }
     }
 }
